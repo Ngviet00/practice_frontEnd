@@ -11,7 +11,6 @@ import Team from './components/Team/Team';
 import Price from './components/Price/Price';
 import Footer from './components/Footer/Footer';
 import Blog from './components/BLog/Blog';
-// import Feedback from './components/Feedback/Feedback';
 
 function App() {
     return (
@@ -26,7 +25,6 @@ function App() {
                         <Function />
                         <Blog />
                         <Team />
-                        {/* <Feedback /> */}
                         <Price />
                         <Footer />
                     </Route>

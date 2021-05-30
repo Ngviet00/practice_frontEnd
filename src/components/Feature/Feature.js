@@ -3,10 +3,12 @@ import './Feature.css';
 import OfflineBoltIcon from '@material-ui/icons/OfflineBolt';
 import StarsIcon from '@material-ui/icons/Stars';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-import ft1 from './../../image/feature-image-1.svg';
+
+import ft1 from './../../image/sw.png';
+import ft4 from './../../image/sw1.png';
 import ft2 from './../../image/fast.jpg';
 import ft3 from './../../image/product.jpg';
-import ft4 from './../../image/feature-image-2.svg';
+
 import Button from '@material-ui/core/Button';
 
 function Feature() {
