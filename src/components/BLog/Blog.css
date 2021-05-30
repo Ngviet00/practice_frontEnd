@@ -1,0 +1,29 @@
+@media (min-width: 960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 1170px !important;
+  }
+}
+.blog {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+.makeStyles-cardGrid-46 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.blog .blog__item:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .blog h1 {
+    font-size: 7vw !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog h1 {
+    font-size: 7vw;
+  }
+}

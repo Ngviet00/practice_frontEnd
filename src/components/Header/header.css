@@ -1,0 +1,75 @@
+.header {
+  width: 100%;
+  background-color: #5f6fff;
+  min-height: 80px;
+  line-height: 80px;
+}
+
+.wp_container {
+  background-color: #5f6fff;
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between;
+  height: 80px;
+}
+.header .wp_container ul {
+  height: 80px;
+}
+.header .wp_container ul li {
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+}
+.header .wp_container ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.header .wp_container ul li a:hover {
+  color: black;
+  transition: all 0.2s;
+}
+
+.header #btn #signIn {
+  color: white;
+  margin-right: 10px;
+}
+.header #btn #signUp {
+  background: #383f98;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.header #btn #signUp:hover {
+  background: #2e3299;
+}
+
+.header #btn #menu__icon {
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+.header #btn #menu__icon:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  #signIn,
+  #menu,
+  #signUp {
+    display: none;
+  }
+  #menu__icon {
+    display: block;
+  }
+  .MuiSvgIcon-root {
+    display: block !important;
+  }
+  .header #btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

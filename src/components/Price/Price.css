@@ -1,0 +1,10 @@
+.price {
+  padding: 0px 10px;
+}
+
+@media (max-width: 375px) {
+  .MuiTypography-h3 {
+    margin-top: 0.5em !important;
+    font-size: 11vw !important;
+  }
+}

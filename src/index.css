@@ -1,0 +1,12 @@
+body {
+  box-sizing: border-box;
+  font-family: "Sen", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper_container {
+  max-width: 1170px;
+  margin: 0px auto;
+}

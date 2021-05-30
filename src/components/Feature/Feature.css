@@ -1,0 +1,93 @@
+.feature {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding: 0px 20px;
+}
+
+.feature .feature__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.feature .feature__item .feature__info {
+  flex-basis: 48%;
+  margin-right: 10px;
+}
+.feature .feature__item .feature__info .feature__icon {
+  width: 50px;
+  height: 50px;
+  background-color: #4171f1;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+
+.feature .feature__item .feature__info .feature__icon .MuiSvgIcon-root {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.feature .feature__item .feature__info h2 {
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.feature .feature__item .feature__info p {
+  color: #33333380 !important;
+  text-align: justify;
+}
+
+.feature .feature__item .feature__info #btn__discover {
+  padding: 15px;
+  border-radius: 30px;
+}
+.feature .feature__item .feature__info .MuiButtonBase-root {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.feature .feature__item .feature__image {
+  flex-basis: 49%;
+}
+
+.feature .feature__item .feature__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.feature .item_even {
+  flex-direction: row-reverse;
+}
+
+.feature .item_even .feature__info {
+  margin-right: 0;
+  flex-basis: 49%;
+}
+
+.feature .item_even .feature__image {
+  flex-basis: 48%;
+}
+
+@media (max-width: 1024px) {
+  .feature .feature__item,
+  .feature .item_even {
+    flex-direction: column;
+  }
+  .feature .feature__item .feature__info {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .feature .feature__item .feature__info p {
+    text-align: center;
+  }
+  .feature .feature__item .feature__info .feature__icon {
+    margin: 0px auto;
+  }
+}
