@@ -5,12 +5,13 @@
   background-position: center center;
   background-size: cover;
   z-index: 1;
+  position: relative;
 }
 
 .hero #mask {
   z-index: 2;
   width: 100%;
-  min-height: 45em;
+  min-height: 50em;
   opacity: 0.8;
   background-color: black;
   display: flex;

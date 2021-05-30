@@ -3,6 +3,8 @@
   background-color: #5f6fff;
   min-height: 80px;
   line-height: 80px;
+  z-index: 10;
+  position: fixed;
 }
 
 .wp_container {
@@ -11,6 +13,8 @@
   padding: 0px 20px;
   justify-content: space-between;
   height: 80px;
+  position: relative;
+  z-index: 20;
 }
 .header .wp_container ul {
   height: 80px;
@@ -30,11 +34,11 @@
   transition: all 0.2s;
 }
 
-.header #btn #signIn {
+.header .wp_container #btn #signIn {
   color: white;
   margin-right: 10px;
 }
-.header #btn #signUp {
+.header .wp_container #btn #signUp {
   background: #383f98;
   padding: 10px 15px;
   border-radius: 6px;
@@ -43,25 +47,25 @@
   transition: all 0.25s;
 }
 
-.header #btn #signUp:hover {
+.header .wp_container #btn #signUp:hover {
   background: #2e3299;
 }
 
-.header #btn #menu__icon {
+.header .wp_container #btn .menu__icon {
   color: white;
   font-size: 30px;
   display: none;
 }
-.header #btn #menu__icon:hover {
+.header #btn .menu__icon:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 767px) {
-  #signIn,
+@media screen and (max-width: 768px) {
+  .header .wp_container #signIn,
   #menu,
-  #signUp {
+  .header .wp_container #signUp {
     display: none;
   }
-  #menu__icon {
+  .menu__icon {
     display: block;
   }
   .MuiSvgIcon-root {
@@ -72,4 +76,47 @@
     align-items: center;
     justify-content: center;
   }
+}
+@media (min-width: 769px) {
+  #toggle_menu {
+    display: none;
+  }
+}
+
+.wp_container .display_menu {
+  display: block !important;
+  overflow-y: hidden !important;
+}
+
+.wp_container #toggle_menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 90;
+  width: 100%;
+  margin-top: 80px;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.wp_container #toggle_menu ul {
+  text-align: center;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+.wp_container #toggle_menu ul li {
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #0000000a;
+}
+
+.wp_container #toggle_menu ul li a {
+  color: black;
+}
+
+.wp_container #toggle_menu ul li:last-child {
+  border-bottom: 0px;
 }
