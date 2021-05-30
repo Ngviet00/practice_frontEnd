@@ -26,7 +26,7 @@ function App() {
                         <Function />
                         <Blog />
                         <Team />
-                        <Feedback />
+                        {/* <Feedback /> */}
                         <Price />
                         <Footer />
                     </Route>
