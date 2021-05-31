@@ -8,12 +8,12 @@
   top: 0;
   left: 0;
   right: 0;
+  padding: 0px 10px;
 }
 
 .wp_container {
   background-color: #5f6fff;
   display: flex;
-  padding: 0px 20px;
   justify-content: space-between;
   height: 80px;
   position: relative;
