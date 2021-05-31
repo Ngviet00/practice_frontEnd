@@ -14,15 +14,11 @@ function Header() {
    const toggleMenu = () => {
       setToggle(!toggle);
    }
-
-   const [width, setWidth] = useState(0);
-   function reportWindowSize() {
-      setWidth(window.innerWidth);
-      if (width > 768) {
+   window.onresize = function () {
+      if (window.innerWidth > 768) {
          setToggle(false);
       }
    }
-   window.onresize = reportWindowSize;
 
    window.onscroll = function () {
       if (document.documentElement.scrollTop > 10) {
@@ -60,8 +56,8 @@ function Header() {
                      </a>
                   </li>
                   <li>
-                     <a href="#blog">
-                        Blog
+                     <a href="#news">
+                        News
                      </a>
                   </li>
                   <li>
@@ -86,16 +82,29 @@ function Header() {
             <div id="toggle_menu" onClick={toggleMenu} className={`${toggle ? "display_menu" : ""}`}>
                <ul>
                   <li>
-                     <Link to="">Solutions</Link>
+                     <a href="#solution">
+                        Solution
+                     </a>
                   </li>
                   <li>
-                     <Link to="">Team</Link>
+                     <a href="#feature">
+                        Feature
+                     </a>
                   </li>
                   <li>
-                     <Link to="">Price</Link>
+                     <a href="#team">
+                        Team
+                     </a>
                   </li>
                   <li>
-                     <Link to="">Feature</Link>
+                     <a href="#news">
+                        News
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#price">
+                        Price
+                     </a>
                   </li>
                   <li>
                      <Link to="/SignIn">

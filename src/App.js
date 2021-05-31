@@ -8,7 +8,6 @@ import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound'
 
 function App() {
-    console.log('app ne');
     return (
         <div className="app">
             <Header />
