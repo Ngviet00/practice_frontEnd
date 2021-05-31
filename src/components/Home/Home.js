@@ -5,7 +5,7 @@ import Feature from '../Feature/Feature';
 import Function from '../Function/Function';
 import Team from '../Team/Team';
 import Price from '../Price/Price';
-import Blog from '../Blog/Blog';
+// import Blog from '../Blog/Blog';
 
 function Home() {
    return (
@@ -15,7 +15,7 @@ function Home() {
          <Feature />
          <Function />
          <Team />
-         <Blog />
+         {/* <Blog /> */}
          <Price />
       </div>
    )
