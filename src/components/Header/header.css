@@ -8,10 +8,10 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 0px 10px;
 }
 
 .wp_container {
+  padding: 0px 20px;
   background-color: #5f6fff;
   display: flex;
   justify-content: space-between;
