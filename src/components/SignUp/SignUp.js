@@ -52,7 +52,7 @@ export default function SignUp() {
       e.preventDefault();
    }
    return (
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" style={{ marginTop: '6em' }}>
          <div className={classes.paper}>
             <Avatar className={classes.avatar}>
                <LockOutlinedIcon />

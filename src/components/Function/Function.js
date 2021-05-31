@@ -12,7 +12,7 @@ import CodeIcon from '@material-ui/icons/Code';
 function Function() {
    const text = "Amet facilisis magna etiam tempor orci eu lobortis. Pharetra pharetra massa massa ultricies.";
    return (
-      <div className="function">
+      <div className="function" id="feature">
          <div className="wrapper_container">
             <h5 className="text-center" style={{ color: '#3f50b5' }}>BUILD FASTER</h5>
             <h1 className="text-center">Everything your app needs and more</h1>

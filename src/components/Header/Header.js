@@ -5,6 +5,7 @@ import logo from './../../image/logo.svg';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
 function Header() {
 
@@ -21,28 +22,52 @@ function Header() {
          setToggle(false);
       }
    }
-
    window.onresize = reportWindowSize;
+
+   window.onscroll = function () {
+      if (document.documentElement.scrollTop > 10) {
+         document.getElementById("btn_back_to_top").style.opacity = '1';
+      } else {
+         document.getElementById("btn_back_to_top").style.opacity = '0';
+      }
+   };
+
+   const backToTop = () => {
+      document.documentElement.scrollTop = 0;
+   }
 
    return (
       <div className="header">
          <div className="wp_container wrapper_container">
-            <Link to="/">
+            <Link to="/" onClick={() => setToggle(false)}>
                <img className="header__icon" src={logo} alt="" />
             </Link>
             <div id="menu">
                <ul>
                   <li>
-                     <Link to="">Solutions</Link>
+                     <a href="#solution">
+                        Solution
+                     </a>
                   </li>
                   <li>
-                     <Link to="">Team</Link>
+                     <a href="#feature">
+                        Feature
+                     </a>
                   </li>
                   <li>
-                     <Link to="">Price</Link>
+                     <a href="#team">
+                        Team
+                     </a>
                   </li>
                   <li>
-                     <Link to="">Feature</Link>
+                     <a href="#blog">
+                        Blog
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#price">
+                        Price
+                     </a>
                   </li>
                </ul>
             </div>
@@ -58,7 +83,7 @@ function Header() {
                   : <MenuIcon onClick={toggleMenu} className="menu__icon" />}
             </div>
 
-            <div id="toggle_menu" className={`${toggle ? "display_menu" : ""}`}>
+            <div id="toggle_menu" onClick={toggleMenu} className={`${toggle ? "display_menu" : ""}`}>
                <ul>
                   <li>
                      <Link to="">Solutions</Link>
@@ -88,6 +113,9 @@ function Header() {
                </ul>
             </div>
          </div>
+         <button onClick={backToTop} id="btn_back_to_top">
+            <ArrowUpwardIcon />
+         </button>
       </div >
    )
 }

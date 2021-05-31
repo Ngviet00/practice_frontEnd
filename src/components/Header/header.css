@@ -5,6 +5,9 @@
   line-height: 80px;
   z-index: 10;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .wp_container {
@@ -53,7 +56,7 @@
 
 .header .wp_container #btn .menu__icon {
   color: white;
-  font-size: 30px;
+  font-size: 35px;
   display: none;
 }
 .header #btn .menu__icon:hover {
@@ -119,4 +122,24 @@
 
 .wp_container #toggle_menu ul li:last-child {
   border-bottom: 0px;
+}
+
+.header #btn_back_to_top {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  background: #e14545;
+  color: white;
+  transition: all 0.35s;
+  opacity: 0;
+  z-index: 999999999;
 }

@@ -9,7 +9,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 function Team() {
    return (
-      <div className="team bg-light">
+      <div className="team bg-light" id="team">
          <div className="wrapper_container">
 
             <h1 className="text-center" id="title">

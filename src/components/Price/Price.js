@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1, 1.5),
    },
    heroContent: {
-      padding: theme.spacing(8, 0, 6),
+      padding: theme.spacing(0, 0, 6),
    },
    cardHeader: {
       backgroundColor:
@@ -94,7 +94,7 @@ const tiers = [
 function Price() {
    const classes = useStyles();
    return (
-      <div className="price wrapper_container">
+      <div className="price wrapper_container" id="price">
          <Container maxWidth="sm" component="main" className={classes.heroContent}>
             <Typography component="h1" variant="h3" align="center" color="textPrimary" gutterBottom>
                Choose a Plan

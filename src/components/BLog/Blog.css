@@ -5,7 +5,7 @@
 }
 .blog {
   margin-top: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 .makeStyles-cardGrid-46 {
   padding-top: 20px !important;
@@ -14,6 +14,10 @@
 
 .blog .blog__item:hover {
   cursor: pointer;
+}
+
+.blog .makeStyles-cardGrid-54 {
+  padding-bottom: 0;
 }
 
 @media (max-width: 768px) {

@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
 function Blog() {
    const classes = useStyles();
    return (
-      <div className="blog wrapper_container">
+      <div className="blog wrapper_container" id="blog">
          <h1 style={{ fontWeight: 'bold', fontSize: '4vw' }} className="text-center">Helpful resources</h1>
          <p style={{ fontSize: '1rem' }} className="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio officiis dolore earum error eaque perferendis laudantium sed.</p>
          <main>
@@ -110,9 +110,8 @@ function Blog() {
                </Grid>
             </Container>
          </main>
-         <hr></hr>
       </div>
    )
 }
 
-export default Blog
+export default Blog;
