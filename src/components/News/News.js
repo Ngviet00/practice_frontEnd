@@ -47,13 +47,13 @@ const useStyles = makeStyles((theme) => ({
 function News() {
    const classes = useStyles();
    return (
-      <div className="blog wrapper_container" id="blog">
+      <div className="news wrapper_container" id="blog">
          <h1 style={{ fontWeight: 'bold', fontSize: '4vw' }} className="text-center">Helpful resources</h1>
          <p style={{ fontSize: '1rem' }} className="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio officiis dolore earum error eaque perferendis laudantium sed.</p>
          <main>
             <Container className={classes.cardGrid} maxWidth="md">
                <Grid container spacing={4}>
-                  <Grid className="blog__item" item xs={12} sm={6} md={4}>
+                  <Grid className="news__item" item xs={12} sm={6} md={4}>
                      <Card className={classes.card}>
                         <CardMedia
                            className={classes.cardMedia}
@@ -71,7 +71,7 @@ function News() {
                      </Card>
                   </Grid>
 
-                  <Grid className="blog__item" item xs={12} sm={6} md={4}>
+                  <Grid className="news__item" item xs={12} sm={6} md={4}>
                      <Card className={classes.card}>
                         <CardMedia
                            className={classes.cardMedia}
@@ -89,7 +89,7 @@ function News() {
                      </Card>
                   </Grid>
 
-                  <Grid className="blog__item" item xs={12} sm={6} md={4}>
+                  <Grid className="news__item" item xs={12} sm={6} md={4}>
                      <Card className={classes.card}>
                         <CardMedia
                            className={classes.cardMedia}

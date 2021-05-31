@@ -3,7 +3,7 @@
     max-width: 1170px !important;
   }
 }
-.blog {
+.news {
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -12,22 +12,22 @@
   padding-bottom: 20px !important;
 }
 
-.blog .blog__item:hover {
+.news .news__item:hover {
   cursor: pointer;
 }
 
-.blog .makeStyles-cardGrid-54 {
+.news .makeStyles-cardGrid-54 {
   padding-bottom: 0;
 }
 
 @media (max-width: 768px) {
-  .blog h1 {
+  .news h1 {
     font-size: 7vw !important;
   }
 }
 
 @media (max-width: 576px) {
-  .blog h1 {
+  .news h1 {
     font-size: 7vw;
   }
 }
