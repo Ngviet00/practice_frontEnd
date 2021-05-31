@@ -20,9 +20,22 @@
   padding-bottom: 0;
 }
 
+@media (max-width: 960px) {
+  .news #wrapper_news {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .news h1 {
     font-size: 7vw !important;
+  }
+}
+
+@media (max-width: 660px) {
+  .news__item {
+    max-width: 100% !important;
+    flex-basis: 90% !important;
   }
 }
 
