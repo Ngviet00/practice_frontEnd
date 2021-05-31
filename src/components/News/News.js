@@ -1,5 +1,4 @@
 import React from 'react';
-import './Blog.css';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -11,6 +10,7 @@ import Box from '@material-ui/core/Box';
 import blog1 from './../../image/blog-post-1.jpg';
 import blog2 from './../../image/blog-post-2.jpg';
 import blog3 from './../../image/blog-post-3.jpg';
+import './News.css';
 
 const useStyles = makeStyles((theme) => ({
    icon: {
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
    },
 }));
 
-function Blog() {
+function News() {
    const classes = useStyles();
    return (
       <div className="blog wrapper_container" id="blog">
@@ -113,4 +113,4 @@ function Blog() {
    )
 }
 
-export default Blog;
+export default News
