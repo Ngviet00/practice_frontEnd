@@ -47,7 +47,7 @@ function Header() {
       window.addEventListener('scroll', scrollFuntion);
       return () => {
          window.removeEventListener('scroll', scrollFuntion);
-      }
+      };
    });
 
    const backToTop = () => {
@@ -59,7 +59,7 @@ function Header() {
    return (
       <div className="header">
          <div className="wp_container wrapper_container">
-            <Link to="/" onClick={() => setToggle(false), backToTop}>
+            <Link to="/" onClick={() => { setToggle(false); backToTop(); }}>
                <img className="header__icon" src={logo} alt="" />
             </Link>
             <div id="menu">
