@@ -55,7 +55,6 @@ function Header() {
       window.pageYOffset = 0
       document.body.scrollTop = 0
    }
-
    return (
       <div className="header">
          <div className="wp_container wrapper_container">
