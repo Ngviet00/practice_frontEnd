@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
 import logo from './../../image/logo.svg';
@@ -14,28 +14,52 @@ function Header() {
    const toggleMenu = () => {
       setToggle(!toggle);
    }
+
    window.onresize = function () {
       if (window.innerWidth > 768) {
          setToggle(false);
       }
    }
 
-   window.onscroll = function () {
-      if (document.documentElement.scrollTop > 10) {
-         document.getElementById("btn_back_to_top").style.opacity = '1';
-      } else {
-         document.getElementById("btn_back_to_top").style.opacity = '0';
+   useEffect(() => {
+      const resizeFunction = () => {
+         if (window.innerWidth > 768) {
+            setToggle(false);
+         }
       }
-   };
+      window.addEventListener('resize', resizeFunction);
+      return () => {
+         window.removeEventListener('resize', resizeFunction);
+      }
+   }, []);
+
+   useEffect(() => {
+      const scrollFuntion = () => {
+         if ((document.documentElement.scrollTop > 0)
+            || (window.pageYOffset > 0)
+            || (document.body.scrollTop > 0)) {
+            document.getElementById("btn_back_to_top").style.opacity = '1';
+         } else {
+            document.getElementById("btn_back_to_top").style.opacity = '0';
+         }
+      }
+
+      window.addEventListener('scroll', scrollFuntion);
+      return () => {
+         window.removeEventListener('scroll', scrollFuntion);
+      }
+   });
 
    const backToTop = () => {
-      document.documentElement.scrollTop = 0;
+      document.documentElement.scrollTop = 0
+      window.pageYOffset = 0
+      document.body.scrollTop = 0
    }
 
    return (
       <div className="header">
          <div className="wp_container wrapper_container">
-            <Link to="/" onClick={() => setToggle(false)}>
+            <Link to="/" onClick={() => setToggle(false), backToTop}>
                <img className="header__icon" src={logo} alt="" />
             </Link>
             <div id="menu">
